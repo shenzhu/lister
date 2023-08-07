@@ -79,7 +79,4 @@ func main() {
 	informerFactory.WaitForCacheSync(wait.NeverStop)
 	pod, err := podinformer.Lister().Pods("default").Get("default")
 	fmt.Println(pod)
-
-	// GVK, GVR
-
 }
